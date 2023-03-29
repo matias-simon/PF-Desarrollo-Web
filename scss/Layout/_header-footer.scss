@@ -1,0 +1,45 @@
+.navbar-brand {
+  color: $font-color-main;
+  font-size: $font-size;
+  font-weight: bold;
+  text-align: left;
+  a {
+    text-decoration: none;
+    color: $font-color-main;
+  }
+}
+.nav-options {
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    text-align: right;
+  }
+  .nav-link{
+    color: $font-color-main;
+    transition: all 0.3s;
+    &:hover{
+      transform: scale(1.2);
+      @include mobile{
+        transition: none;
+        transform: none;
+      }
+    }
+   
+  }
+  
+}
+
+/* footer */
+.footer-icons {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-top: 2%;
+  }
+}
+.footer-space {
+  margin-top: 50px;
+}

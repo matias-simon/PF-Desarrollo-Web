@@ -1,0 +1,27 @@
+.testimonial {
+  &-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 50px;
+    @include mobile{
+      width: 15%;
+      margin: 10px;
+    }
+  }
+  &-text {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    @include mobile{
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.carousel-control {
+  &-next, &-prev {
+    filter: invert(100%);
+  }
+}
+.margins {
+  margin: 3% 5%;
+}

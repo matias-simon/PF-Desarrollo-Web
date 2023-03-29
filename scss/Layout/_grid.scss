@@ -1,0 +1,22 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 0.25fr 2fr 0.25fr;
+  grid-template-columns: auto;
+  font-family: $font;
+  text-align: center;
+  height: 100vh;
+}
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}

@@ -1,0 +1,74 @@
+.big-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  @include mobile{
+    font-size: 2.5rem;
+  }
+}
+
+.btn-padding {
+  margin-top: 12%;
+  margin-left: auto;
+  margin-right: auto;
+  @include mobile{
+    margin-top: 5%;
+  }
+}
+#title {
+  background-color: $color-main;
+  color: $font-color-main;
+  text-align: left;
+}
+
+.title-left {
+  background-color: $color-main;
+  color: $font-color-main;
+  text-align: left;
+  padding: 5% ;
+  margin: auto;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.title-image {
+  width: 60%;
+  transform: rotate(15deg);
+  position: relative;
+  left: 35%;
+
+  @include mobile {
+    position: static;
+    transform: rotate(0);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.title-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+@each $name-color, $bgcolor in $colors {
+  .btn--#{$name-color} {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+      color: $bgcolor;
+      scale: 1.4;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font;
+  font-weight: bold;
+}
+
+p {
+  color: $p-color;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  li {
+    a {
+      text-decoration: none;
+      color: $font-color-main;
+    }
+  }
+}
+.colored-section{
+  background-color: $color-main;
+  color: $font-color-main;
+}
+.white-section{
+  background-color: $secondary-color;
+}

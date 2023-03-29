@@ -1,0 +1,25 @@
+.section-heading {
+    font-size: $font-size;
+    line-height: $line-height;
+  }
+  .dogs-picture{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  .card{
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    
+  }
+  
+  .card{
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+    
+  }

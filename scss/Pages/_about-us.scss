@@ -1,0 +1,41 @@
+.about {
+  text-decoration: underline;
+  @include mobile{
+    text-align: center;
+  }
+  &-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  &-description {
+    margin: 3% 0;
+    line-height: $line-height;
+    text-align: left;
+    padding: 3%;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    h3{
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
+    
+    @include mobile{
+      h3{
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+    
+    }
+    h1 {
+      font-size: $font-size;
+    }
+  }
+}
+
+.about-labrador {
+  width: 90%;
+  border-radius: 100%;
+  margin-bottom: 50px;
+  margin: 3% 0;
+}
